@@ -175,11 +175,11 @@ with col4 :
 # column 2 에 담을 내용
     if status == 'LCD':
         st.metric(label="글꼴높이", value="{0:.2f}mm".format(lcd_text))
-        ColourWidgetText("{0:.1f}mm".format(lcd_text), '#4068cf') 
+        ColourWidgetText("{0:.2f}mm".format(lcd_text), '#4068cf') 
 
     elif status == 'LED':
         st.metric(label="글꼴높이", value="{0:.2f}mm".format(led_text))
-        ColourWidgetText("{0:.1f}mm".format(led_text), '#4068cf') 
+        ColourWidgetText("{0:.2f}mm".format(led_text), '#4068cf') 
 
 if status=='LED':
     st.divider()
